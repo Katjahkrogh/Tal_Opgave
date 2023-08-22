@@ -12,7 +12,11 @@ console.log(rndNum);
 
 // Opdater din funktion så den skriver det tilfædige tal til HTML.
 
-window.addEventListener("load", newNumber);
+window.addEventListener("load", clickButton);
+
+function clickButton() {
+  document.querySelector("#button").addEventListener("click", newNumber);
+}
 
 function newNumber() {
   document.querySelector("#number").textContent = rndNum;
