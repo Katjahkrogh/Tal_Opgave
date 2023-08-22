@@ -9,3 +9,11 @@ function generateRandomNumber(max) {
 }
 
 console.log(rndNum);
+
+// Opdater din funktion så den skriver det tilfædige tal til HTML.
+
+window.addEventListener("load", newNumber);
+
+function newNumber() {
+  document.querySelector("#number").textContent = rndNum;
+}
